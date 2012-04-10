@@ -12,4 +12,4 @@ alias g='git'
 alias gp='git push'
 alias gl='git pull'
 alias gca='git commit -v -a'
-
+alias gco='git checkout'
