@@ -1,0 +1,7 @@
+.
+..
+.git/
+.DS_Store
+excludes.txt
+bootstrap.sh
+README.mdown

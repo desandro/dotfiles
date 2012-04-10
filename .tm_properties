@@ -1,0 +1,10 @@
+TM_GIT = "/usr/bin/git"
+tabSize = 2
+softTabs = true
+showInvisibles = true
+softWrap = true
+excludeInFileChooser = "node_modules"
+
+# git config
+[ "config" ]
+softTabs = false
