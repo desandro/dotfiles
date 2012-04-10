@@ -4,6 +4,7 @@ softTabs = true
 showInvisibles = true
 softWrap = true
 excludeInFileChooser = "node_modules"
+include = "{.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile}"
 
 # git config
 [ "config" ]
