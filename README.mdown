@@ -52,8 +52,16 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
+## Prompt themes
+
+I stole the prompt themes from [bash-it](https://github.com/revans/bash-it). Try out a different one by changing `.bash_profile`:
+
+``` bash
+source "$DOTFILES/themes/rainbowbrite.theme.bash"
+```
+
 ## These guys did all the hard work
 
-+ [revans/bash-it](github.com/revans/bash-it)
++ [revans/bash-it](https://github.com/revans/bash-it)
 + [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles/)
 + [necolas/dotfiles](https://github.com/necolas/dotfiles)
