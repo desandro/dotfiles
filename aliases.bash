@@ -14,4 +14,4 @@ alias gl='git pull'
 alias gca='git commit -v -a'
 alias gco='git checkout'
 # Lovely git log, thx @visionmedia
-alias glog="git log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph"
+alias glog="git log --format='%Cgreen%h%Creset %Cblue%ad%Creset %C(cyan)%an%Creset: %s' --graph --date=short"
