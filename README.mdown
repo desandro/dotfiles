@@ -11,7 +11,7 @@ cd ~/where/i/put/repos/
 git clone https://github.com/desandro/dotfiles.git
 ```
 
-Edit `DOTFILES` location in `bootstrap.sh`
+Edit `DOTFILES` location in `.bash_profile`
 
 ``` bash
 export DOTFILES="$HOME/projects/dotfiles" # from
