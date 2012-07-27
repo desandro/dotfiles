@@ -3,7 +3,7 @@ tabSize = 2
 softTabs = true
 showInvisibles = true
 softWrap = true
-excludeInFileChooser = "node_modules"
+excludeInFileChooser = "{node_modules, _site}"
 include = "{.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile}"
 
 # Display the name of the home directory
