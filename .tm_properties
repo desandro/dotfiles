@@ -3,8 +3,9 @@ tabSize = 2
 softTabs = true
 showInvisibles = true
 softWrap = true
-excludeInFileChooser = "{node_modules, _site}"
-include = "{.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile}"
+excludeInFileChooser = "{node_modules,_site}"
+# include some dotfiles
+include = "{.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile,.jshintrc}"
 
 # Display the name of the home directory
 windowTitle    = "$TM_DISPLAYNAME - $CWD"
