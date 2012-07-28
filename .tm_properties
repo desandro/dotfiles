@@ -9,6 +9,6 @@ include = "{.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.ba
 # Display the name of the home directory
 windowTitle    = "$TM_DISPLAYNAME - $CWD"
 
-# git config
-[ "config" ]
+# files that need proper tabs
+[ "{config,Makefile}" ]
 softTabs = false
