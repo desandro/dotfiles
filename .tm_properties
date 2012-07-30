@@ -8,7 +8,7 @@ excludeInFileChooser = "{node_modules,_site}"
 include = "{.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile,.jshintrc,.editorconfig}"
 
 # Display the name of the home directory
-windowTitle    = "$TM_DISPLAYNAME - $CWD"
+windowTitle    = "$TM_DISPLAYNAME"
 
 # files that need proper tabs
 [ "{config,Makefile}" ]
