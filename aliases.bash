@@ -15,3 +15,8 @@ alias gca='git commit -v -a'
 alias gco='git checkout'
 # Lovely git log, thx @visionmedia
 alias glog="git log --format='%Cgreen%h%Creset %Cblue%ad%Creset %C(cyan)%an%Creset: %s' --graph --date=short"
+
+# output current git branch, echo $(curbr)
+function curbr() {
+  git rev-parse --abbrev-ref HEAD
+}
