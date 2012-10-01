@@ -5,7 +5,7 @@ showInvisibles = true
 softWrap = true
 # fonts
 fontName = "Consolas"
-fontSize = 14
+fontSize = 15
 
 excludeInFileChooser = "{node_modules,_site}"
 # include some dotfiles
