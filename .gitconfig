@@ -25,3 +25,5 @@
 [instaweb]
 	local = true
 	httpd = webrick
+[push]
+	default = matching
