@@ -2,6 +2,7 @@ TM_GIT = "/usr/bin/git"
 tabSize = 2
 softTabs = true
 showInvisibles = true
+invisiblesMap = "~ "
 softWrap = true
 # fonts
 fontName = "Consolas"
