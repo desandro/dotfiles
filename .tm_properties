@@ -8,7 +8,8 @@ softWrap = true
 fontName = "Consolas"
 fontSize = 15
 
-excludeInFileChooser = "{node_modules,_site}"
+excludeInFileChooser = "{node_modules,bower_components,_site}"
+excludeInFolderSearch = "{node_modules,bower_components,_site}"
 # include some dotfiles
 include = "{*,.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile,.jshintrc,.editorconfig}"
 
