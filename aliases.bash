@@ -7,16 +7,19 @@ alias reload='source ~/.bash_profile'
 alias showhidden="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
 alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
 
+# display local IP address
+alias myip='ipconfig getifaddr en0 && ipconfig getifaddr en1'
+
 # Git
 alias g='git'
 alias gp='git push'
 alias gl='git pull'
 alias gca='git commit -v -a'
 alias gco='git checkout'
+alias gta='git tag -a'
+# rebase from latest commit: `grb 3` for 3 latest commits
+function grb() {
+  git rebase -i HEAD~$1
+}
 # Lovely git log, thx @visionmedia
 alias glog="git log --format='%Cgreen%h%Creset %Cblue%ad%Creset %C(cyan)%an%Creset: %s' --graph --date=short"
-
-# output current git branch, echo $(curbr)
-function curbr() {
-  git rev-parse --abbrev-ref HEAD
-}
