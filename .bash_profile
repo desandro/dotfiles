@@ -21,7 +21,7 @@ do
 done
 
 # sweet prompt theme from bash-it
-source "$DOTFILES/themes/rainbowbrite.theme.bash"
+source "$DOTFILES/rainbowbrite.theme.bash"
 
 # source custom files
 CUSTOM="$DOTFILES/custom/*"
