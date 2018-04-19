@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Reload Library
 alias reload='source ~/.bash_profile'
