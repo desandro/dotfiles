@@ -13,7 +13,7 @@ export LSCOLORS='Gxfxcxdxdxegedabagacad'
 export EDITOR="/usr/local/bin/mate -w"
 export GIT_EDITOR='/usr/local/bin/mate -w'
 
-# source congi bash files, like aliases, colors, base theme
+# source bash files, like aliases, colors, base theme
 HELPERS="${DOTFILES}/*.bash"
 for config_file in $HELPERS
 do
@@ -21,7 +21,7 @@ do
 done
 
 # sweet prompt theme from bash-it
-source "$DOTFILES/rainbowbrite.theme.bash"
+source "$DOTFILES/themes/rainbowbrite.theme.bash"
 
 # source custom files
 CUSTOM="$DOTFILES/custom/*"

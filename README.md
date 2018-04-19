@@ -18,16 +18,16 @@ export DOTFILES="$HOME/projects/dotfiles" # from
 export DOTFILES="$HOME/where/i/put/repos" # to
 ```
 
-Run `bootstrap.sh`
+Run `install.sh`
 
 ``` bash
 cd dotfiles
-./bootstrap.sh
+./install.sh
 ```
 
 ### Updating
 
-Run `./bootstrap.sh` again any time you want to update your dotfiles.
+Run `./install.sh` again any time you want to update your dotfiles.
 
 ## Customize
 
@@ -50,14 +50,6 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 # Set these credentials in ~/.gitconfig
 git config --global user.name "$GIT_AUTHOR_NAME"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
-```
-
-## Prompt themes
-
-I stole the prompt themes from [bash-it](https://github.com/revans/bash-it). Try out a different one by changing `.bash_profile`:
-
-``` bash
-source "$DOTFILES/themes/rainbowbrite.theme.bash"
 ```
 
 ## These guys did all the hard work
