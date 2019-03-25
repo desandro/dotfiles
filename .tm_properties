@@ -11,7 +11,7 @@ fontSize = 15
 excludeInFileChooser = "{node_modules,bower_components,_site}"
 excludeInFolderSearch = "{node_modules,bower_components,_site}"
 # include some dotfiles
-include = "{*,.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile,.jshintrc,.editorconfig,.eslintrc,.rspec,.github}"
+include = "{*,.tm_properties,.htaccess,.gitconfig,.gitignore,.gitignore_global,.bash_profile,.jshintrc,.editorconfig,.eslintrc,.eslintrc.*,.eslintignore,.rspec,.github}"
 
 # Display the name of the home directory
 windowTitle    = "$TM_DISPLAYNAME"
