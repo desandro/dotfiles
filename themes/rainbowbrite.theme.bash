@@ -12,6 +12,8 @@ prompt_setter() {
   PS1="$red$(scm_char) $bold_blue\w$yellow$(scm_prompt_info) $black\$$reset_color "
   PS2='> '
   PS4='+ '
+  # set window title to directory
+  echo -ne "\033];${PWD##*/}\007"
 }
 
 PROMPT_COMMAND=prompt_setter

@@ -11,7 +11,7 @@ fontSize = 15
 # include all files including dot files
 include = "{*,.*}"
 # exclude specifics
-exclude = "{.DS_Store,.git}"
+exclude = "{.DS_Store,.git,.esm-cache}"
 
 excludeInFileChooser = "{node_modules,bower_components,_site}"
 excludeInFolderSearch = "{node_modules,bower_components,_site}"
