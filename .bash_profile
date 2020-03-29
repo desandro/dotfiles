@@ -23,6 +23,11 @@ done
 # sweet prompt theme from bash-it
 source "$DOTFILES/themes/rainbowbrite.theme.bash"
 
+# display directory in iTerm tab title https://apple.stackexchange.com/a/315456
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
+
 # source custom files
 CUSTOM="$DOTFILES/custom/*"
 for config_file in $CUSTOM
