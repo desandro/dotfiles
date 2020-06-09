@@ -6,9 +6,6 @@
 # in glorious red / blue / yellow color scheme
 
 prompt_setter() {
-  # displays user@server in purple
-  # PS1="$red$(scm_char) $purple\u@\h$reset_color:$blue\w$yellow$(scm_prompt_info)$(ruby_version_prompt) $black\$$reset_color "
-  # no user@server
   PS1="$red$(scm_char) $bold_blue\w$yellow$(scm_prompt_info) $black\$$reset_color "
   PS2='> '
   PS4='+ '
