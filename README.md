@@ -1,6 +1,6 @@
 # dotfiles
 
-Personalized settings for Terminal, Git, TextMate, etc.
+Personalized command line settings.
 
 ## Installation
 
