@@ -2,6 +2,8 @@
 
 Personalized command line settings. Updated for zsh on macOS Catalina.
 
+![desandro dotfiles in terminal](https://user-images.githubusercontent.com/85566/87696066-524f3f80-c75e-11ea-8059-4219d3a19f48.png)
+
 ## Installation
 
 Download or clone repo
