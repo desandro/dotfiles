@@ -1,59 +1,37 @@
 # dotfiles
 
-Personalized command line settings.
+Personalized command line settings. Updated for zsh on macOS Catalina.
 
 ## Installation
 
-Clone repo
+Download or clone repo
 
-``` bash
-cd ~/where/i/put/repos/
-git clone https://github.com/desandro/dotfiles.git
-```
+Edit `dotfiles` location in `homefiles/.zshrc`
 
-Edit `DOTFILES` location in `.bash_profile`
-
-``` bash
-export DOTFILES="$HOME/projects/dotfiles" # from
-export DOTFILES="$HOME/where/i/put/repos" # to
+``` sh
+dotfiles="$HOME/dev/dotfiles" # from
+dotfiles="$HOME/where/i/put/dotfiles" # to
 ```
 
 Run `install.sh`
 
-``` bash
-cd dotfiles
+``` sh
+cd ~/where/i/put/dotfiles
 ./install.sh
 ```
 
 ### Updating
 
-Run `./install.sh` again any time you want to update your dotfiles.
+- Run `./install.sh` to update dotfiles
+- Run `reload` to update shell scripts
 
 ## Customize
 
-Put all the other files you want sourced in `dotfiles/custom`.
+Put any the other shell scripts you want sourced in `dotfiles/sh`. For example, I have `dotfiles/sh/dave.sh` that has aliases and config that are particular to me.
 
-For example, I have `dotfiles/custom/desandro.bash` that looks like
+## Other dotfile projects
 
-``` bash
-# PATH exports
-PATH=$PATH:~/.gem/ruby/1.8/bin
-export PATH
+My dotfiles were mostly refactored from these other projects
 
-# Git credentials
-# Not under version control to prevent people from accidentally
-# committing with your details
-GIT_AUTHOR_NAME="David DeSandro"
-GIT_AUTHOR_EMAIL="desandro@example.com"
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-# Set these credentials in ~/.gitconfig
-git config --global user.name "$GIT_AUTHOR_NAME"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
-```
-
-## These guys did all the hard work
-
-+ [revans/bash-it](https://github.com/revans/bash-it)
-+ [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles/)
-+ [necolas/dotfiles](https://github.com/necolas/dotfiles)
++ [bash-it](https://github.com/Bash-it/bash-it)
++ [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)

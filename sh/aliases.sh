@@ -1,7 +1,4 @@
-#!/usr/bin/env bash
-
-# Reload Library
-alias reload='source ~/.bash_profile'
+alias reload='source ~/.zshrc'
 
 # Show/hide hidden files in Finder
 alias showhidden="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
@@ -11,7 +8,6 @@ alias hidehidden="defaults write com.apple.Finder AppleShowAllFiles -bool false 
 alias myip='ipconfig getifaddr en0 && ipconfig getifaddr en1'
 
 # Git
-alias g='git'
 alias gp='git push'
 alias gl='git pull'
 alias gca='git commit -v -a'
