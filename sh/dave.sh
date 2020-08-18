@@ -18,3 +18,6 @@ export GIT_EDITOR='/usr/local/bin/mate -w'
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 # This loads nvm
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+
+# rbenv
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
