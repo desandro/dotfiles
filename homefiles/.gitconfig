@@ -27,3 +27,5 @@
 	httpd = webrick
 [push]
 	default = matching
+[pull]
+	rebase = false
