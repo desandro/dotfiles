@@ -28,4 +28,4 @@
 [push]
 	default = matching
 [pull]
-	rebase = false
+	ff = only
