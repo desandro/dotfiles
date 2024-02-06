@@ -10,7 +10,7 @@ function git_prompt_info() {
   local ref
   ref=$(git symbolic-ref HEAD 2> /dev/null) || \
   ref=$(git rev-parse --short HEAD 2> /dev/null) || return 0
-  echo " $fg[yellow](${ref#refs/heads/} $(parse_git_dirty)$fg[yellow])"
+  echo " %{$fg[yellow]%}(${ref#refs/heads/} $(parse_git_dirty)%{$fg[yellow]%})"
 }
 
 function parse_git_dirty() {
@@ -19,15 +19,15 @@ function parse_git_dirty() {
   if [[ -n $changedFiles ]]; then
     # trim whitespace https://unix.stackexchange.com/a/205854
     local changedCount=$(echo $changedFiles | wc -l | awk '{$1=$1;print}')
-    echo "$fg_bold[red]✗$changedCount"
+    echo "%{$fg_bold[red]%}✗$changedCount%b"
   else
-    echo "$fg_bold[green]✓"
+    echo "%{$fg_bold[green]%}✓%b"
   fi
 }
 
 # zsh prompt sequences: http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
 setopt prompt_subst
-PROMPT='$fg[red]✦ $fg_bold[blue]%~%b$(git_prompt_info) $fg[black]\$$reset_color '
+PROMPT='%{$fg[red]%}✦ %{$fg_bold[blue]%}%~%b$(git_prompt_info) %{$fg[black]%}§%{$reset_color%} '
 
 # ---- iTerm tab title ---- #
 
