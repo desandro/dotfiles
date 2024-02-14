@@ -9,6 +9,7 @@ alias myip='ipconfig getifaddr en0 && ipconfig getifaddr en1'
 
 # Git
 alias gp='git push'
+alias gpoh='git push origin HEAD'
 alias gl='git pull'
 alias gca='git commit -v -a'
 alias gco='git checkout'
