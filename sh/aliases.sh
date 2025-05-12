@@ -13,7 +13,8 @@ alias gpoh='git push origin HEAD'
 alias gl='git pull'
 alias gca='git commit -v -a'
 alias gco='git checkout'
-alias gta='git tag -a'
+alias gcnv='git add . && git commit --no-verify'
+
 # rebase from latest commit: `grb 3` for 3 latest commits
 function grb() {
   git rebase -i HEAD~$1
