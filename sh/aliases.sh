@@ -11,7 +11,7 @@ alias myip='ipconfig getifaddr en0 && ipconfig getifaddr en1'
 alias gp='git push'
 alias gpoh='git push origin HEAD'
 alias gl='git pull'
-alias gca='git commit -v -a'
+alias gcam='git commit -a -m'
 alias gco='git checkout'
 alias gcnv='git add . && git commit --no-verify'
 
