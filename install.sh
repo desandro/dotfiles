@@ -17,4 +17,4 @@ fi
 
 unset sync
 
-source ~/.zshrc
+echo "Done. Open a new terminal, or run: source ~/.zshrc"
